@@ -1,0 +1,39 @@
+﻿@model EmpCRUD220424.Models.employee
+
+@{
+	ViewBag.Title = "showDetails";
+}
+
+<h2>showDetails</h2>
+@using (Html.BeginForm("signup", "employee", FormMethod.Post))
+{
+	<table>
+		<tr>
+			<td>@Html.LabelFor(x => x.empid)</td>
+			<td>@Html.DisplayFor(x => x.empid)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.name)</td>
+			<td>@Html.DisplayFor(x => x.name)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.address)</td>
+			<td>@Html.DisplayFor(x => x.address)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.contact)</td>
+			<td>@Html.DisplayFor(x => x.contact)</td>
+		</tr>
+		<tr>
+			<td>@Html.LabelFor(x => x.email)</td>
+			<td>@Html.DisplayFor(x => x.email)</td>
+		</tr>
+
+		<tr>
+			<td><input type="submit" value="submit" /></td>
+			<td><input type="reset" value="Reset" /></td>
+		</tr>
+	</table>
+
+}
+
